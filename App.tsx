@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {NavigationContainer} from "@react-navigation/native";
+import { ThemeProvider } from 'styled-components/native';
+import AppStackNavigation from "./routes/AppStackNavigation";
+import { theme } from './styles/Theme/Theme';
+import {useFonts} from "expo-font";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const App = () => {
+    const [fontsLoaded] = useFonts({
+        'Outfit-Regular': require('./assets/fonts/Outfit/static/Outfit-Regular.ttf'),
+        'Outfit-Thin': require('./assets/fonts/Outfit/static/Outfit-Thin.ttf'),
+    });
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    return (
+      <ThemeProvider theme={theme}>
+          <NavigationContainer>
+            <AppStackNavigation />
+          </NavigationContainer>
+      </ThemeProvider>
+    );
+};
+
+export default App;
