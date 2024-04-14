@@ -1,8 +1,7 @@
-import {Platform, SafeAreaView, ScrollView, StatusBar, StyleSheet, View} from "react-native";
+import {Platform, SafeAreaView, ScrollView, StatusBar, StyleSheet} from "react-native";
 import React, {useState} from "react";
 import Menu from "../../components/NavigationBar/Menu";
 import SideBar from "../../components/NavigationBar/SideBar";
-import {useFonts} from "expo-font";
 
 type TemplateProps = {
     child: React.ReactNode;
@@ -30,7 +29,7 @@ function Template({ child }: TemplateProps) {
 const styles = StyleSheet.create({
     AndroidSafeArea: {
         flex: 1,
-        paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+        //paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
         backgroundColor: "#7493b5",
         fontFamily: "Outfit-Regular",
     },

@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         zIndex: 1,
-        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+        //paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
     },
     scrollViewContent: {
         flexGrow: 1,
