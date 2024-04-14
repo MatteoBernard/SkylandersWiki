@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://192.168.1.68:3000';
+const BASE_URL = 'https://silly-pink-belt.cyclic.app/';
 
 export const getSkylanders = async () => {
     try {
