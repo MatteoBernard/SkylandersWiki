@@ -3,7 +3,7 @@ import { ActivityIndicator, StyleSheet, View } from "react-native";
 import {getGames} from "../../services/Api/SkylandersApi";
 import GamesCard from "./GamesCard";
 import Text from "../../styles/Theme/StyledText";
-import indexStyles from "../../styles/IndexStyle";
+import indexStyles from "../../styles/ViewStyles/IndexStyle";
 
 type GamesTabProps = {
     navigation: any;
@@ -42,7 +42,7 @@ function GamesTab({ navigation }: GamesTabProps) {
         isLoading ? (
             <ActivityIndicator size="large" color="#0000ff" />
         ) : (
-            <View style={styles.container}>
+            <View style={indexStyles.container}>
                 <Text style={indexStyles.title}>Games</Text>
                 {games.map((game, index) => (
                     <View key={index}>
@@ -58,20 +58,5 @@ function GamesTab({ navigation }: GamesTabProps) {
         )
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        padding: 10,
-    },
-    gamesContainer: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-    },
-});
 
 export default GamesTab;

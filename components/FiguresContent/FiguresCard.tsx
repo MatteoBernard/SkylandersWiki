@@ -1,6 +1,7 @@
 import {StyleSheet, TouchableOpacity, View} from "react-native";
 import {Image} from "expo-image";
 import Text from "../../styles/Theme/StyledText";
+import colors from "../../styles/Colors";
 
 type FiguresCardProps = {
     name: string;
@@ -22,11 +23,11 @@ function FiguresCard(props: FiguresCardProps) {
 const styles = StyleSheet.create({
     figure: {
         width: '30%',
-        backgroundColor: "#9cbee1",
+        backgroundColor: colors.secondary,
         padding: 5,
         borderRadius: 5,
         borderWidth: 1.5,
-        borderColor: '#ccc',
+        borderColor: colors.borders,
         margin: 5,
     },
     image: {

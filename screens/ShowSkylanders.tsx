@@ -7,7 +7,7 @@ import BackButton from "../components/Commons/BackButton";
 import React, {useEffect, useState} from "react";
 import Text from "../styles/Theme/StyledText"
 import {getElementByName} from "../services/Api/SkylandersApi";
-import showStyles from "../styles/ShowStyle";
+import showStyles from "../styles/ViewStyles/ShowStyle";
 
 type ShowSkylandersProps = NativeStackScreenProps<RootStackParamList, 'ShowSkylanders'>;
 

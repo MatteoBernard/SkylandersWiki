@@ -1,6 +1,7 @@
 import {StyleSheet, TouchableOpacity, View} from "react-native";
 import Text from "../../styles/Theme/StyledText";
 import {Image} from "expo-image";
+import colors from "../../styles/Colors";
 
 type HomeCardProps = {
     name: string;
@@ -22,7 +23,7 @@ function HomeCard(props: HomeCardProps) {
 const styles = StyleSheet.create({
     figure: {
         width: '70%',
-        backgroundColor: "#9cbee1",
+        backgroundColor: colors.secondary,
         padding: 5,
         borderRadius: 5,
         borderWidth: 1.5,

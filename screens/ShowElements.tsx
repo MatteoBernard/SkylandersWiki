@@ -5,7 +5,7 @@ import {Image} from "expo-image";
 import Template from "./Template/Template";
 import BackButton from "../components/Commons/BackButton";
 import React from "react";
-import showStyles from "../styles/ShowStyle";
+import showStyles from "../styles/ViewStyles/ShowStyle";
 import Text from "../styles/Theme/StyledText"
 
 type ShowElementsProps = NativeStackScreenProps<RootStackParamList, 'ShowElements'>;

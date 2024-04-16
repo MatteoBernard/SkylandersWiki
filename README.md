@@ -16,9 +16,8 @@ You can access to various datas, related to the Skylanders franchise.
 
 ## Version
 
-v1.0.0
+v1.1.0
 
 ## Next updates
 
-- Add content filters
 - Improve style 

@@ -1,5 +1,6 @@
 import {StyleSheet, TouchableOpacity, View} from "react-native";
 import {Ionicons} from '@expo/vector-icons'
+import colors from "../../styles/Colors";
 
 type MenuProps = {
     isSidebarOpen: boolean;
@@ -11,9 +12,9 @@ function Menu(props: MenuProps) {
         <View style={styles.container}>
             <TouchableOpacity>
                 {props.isSidebarOpen ? (
-                    <Ionicons name="close-outline" size={30} color="black" onPress={props.onPress} style={styles.icon} />
+                    <Ionicons name="close-outline" size={30} onPress={props.onPress} style={styles.icon} />
                 ) : (
-                    <Ionicons name="menu-outline" size={30} color="black" onPress={props.onPress} style={styles.icon} />
+                    <Ionicons name="menu-outline" size={30} onPress={props.onPress} style={styles.icon} />
                 )}
             </TouchableOpacity>
         </View>
@@ -27,7 +28,7 @@ const styles = StyleSheet.create({
         width: "100%",
         paddingHorizontal: 20,
         paddingVertical: 10,
-        backgroundColor: "#42618f",
+        backgroundColor: colors.tertiary,
     },
     icon: {
         color: "white"

@@ -2,6 +2,7 @@ import {Platform, SafeAreaView, ScrollView, StatusBar, StyleSheet} from "react-n
 import React, {useState} from "react";
 import Menu from "../../components/NavigationBar/Menu";
 import SideBar from "../../components/NavigationBar/SideBar";
+import colors from "../../styles/Colors";
 
 type TemplateProps = {
     child: React.ReactNode;
@@ -30,11 +31,11 @@ const styles = StyleSheet.create({
     AndroidSafeArea: {
         flex: 1,
         //paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-        backgroundColor: "#7493b5",
+        backgroundColor: colors.primary,
         fontFamily: "Outfit-Regular",
     },
     container: {
-        backgroundColor: "#7493b5"
+        backgroundColor: colors.primary
     },
 });
 

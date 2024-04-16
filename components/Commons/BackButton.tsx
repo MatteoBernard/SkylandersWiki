@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, TouchableOpacity} from 'react-native';
 import {Ionicons} from "@expo/vector-icons";
+import colors from "../../styles/Colors";
 
 type BackButtonProps = {
     onPress: () => void;
@@ -16,7 +17,7 @@ function BackButton(props: BackButtonProps) {
 
 const styles = StyleSheet.create({
     icon: {
-        color: "white",
+        color: colors.light,
         margin: 10,
     },
 });

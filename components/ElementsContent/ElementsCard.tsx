@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, View } from "react-native";
 import { Image } from "expo-image";
 import Text from "../../styles/Theme/StyledText";
+import colors from "../../styles/Colors";
 
 type ElementCardProps = {
     name: string;
@@ -24,11 +25,11 @@ function ElementsCard(props: ElementCardProps) {
 const styles = StyleSheet.create({
     element: {
         width: '40%',
-        backgroundColor: "#9cbee1",
+        backgroundColor: colors.secondary,
         padding: 5,
         borderRadius: 5,
         borderWidth: 1.5,
-        borderColor: '#ccc',
+        borderColor: colors.borders,
         margin: 10,
     },
     image: {

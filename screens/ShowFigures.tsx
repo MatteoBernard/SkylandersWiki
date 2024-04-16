@@ -5,7 +5,7 @@ import {RootStackParamList} from "../routes/AppStack";
 import {Image} from "expo-image";
 import BackButton from "../components/Commons/BackButton";
 import React from "react";
-import showStyles from "../styles/ShowStyle";
+import showStyles from "../styles/ViewStyles/ShowStyle";
 
 type ShowFiguresProps = NativeStackScreenProps<RootStackParamList, 'ShowFigures'>;
 

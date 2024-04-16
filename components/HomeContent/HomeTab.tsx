@@ -1,6 +1,6 @@
 import {ActivityIndicator, StyleSheet, View} from "react-native";
 import Text from "../../styles/Theme/StyledText";
-import indexStyles from "../../styles/IndexStyle";
+import indexStyles from "../../styles/ViewStyles/IndexStyle";
 import {useEffect, useState} from "react";
 import {
     getElementByName,

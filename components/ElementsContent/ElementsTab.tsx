@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ActivityIndicator, StyleSheet, View } from "react-native";
 import {getElements} from "../../services/Api/SkylandersApi";
 import ElementsCard from "./ElementsCard";
-import indexStyles from "../../styles/IndexStyle";
+import indexStyles from "../../styles/ViewStyles/IndexStyle";
 import Text from "../../styles/Theme/StyledText";
 
 type ElementsTabProps = {
@@ -42,10 +42,10 @@ function ElementsTab({ navigation }: ElementsTabProps) {
         isLoading ? (
             <ActivityIndicator size="large" color="#0000ff" />
         ) : (
-            <View style={styles.container}>
+            <View style={indexStyles.container}>
                 <Text style={indexStyles.title}>Elements</Text>
                 {elements.length > 0 ? (
-                    <View style={styles.elementsContainer}>
+                    <View style={indexStyles.subContainer}>
                         {elements.map((element, index) => (
                             element && element.name && element.image && (
                                 <ElementsCard
@@ -65,20 +65,5 @@ function ElementsTab({ navigation }: ElementsTabProps) {
         )
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        padding: 10,
-    },
-    elementsContainer: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'center',
-    },
-});
 
 export default ElementsTab;

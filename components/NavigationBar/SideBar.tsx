@@ -4,6 +4,7 @@ import SideButton from "./SideButton";
 import {RootStackParamList} from "../../routes/AppStack";
 import {useNavigation} from "@react-navigation/native";
 import {StackNavigationProp} from "@react-navigation/stack";
+import colors from "../../styles/Colors";
 
 type SideBarProps = {
     isOpen: boolean;
@@ -70,8 +71,8 @@ const styles = StyleSheet.create({
         left: 0,
         bottom: 0,
         width: 200,
-        backgroundColor: '#263055',
-        borderRightColor: "#42618f",
+        backgroundColor: colors.dark,
+        borderRightColor: colors.primary,
         borderWidth: 2,
         alignItems: 'center',
         justifyContent: 'center',
@@ -85,7 +86,7 @@ const styles = StyleSheet.create({
         marginTop: 25
     },
     separator: {
-        borderColor: 'white',
+        borderColor: colors.light,
         borderWidth: 1,
         width: "80%",
         alignSelf: "center",
