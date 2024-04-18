@@ -22,7 +22,7 @@ function GamesCard(props: GamesCardProps) {
 
 const styles = StyleSheet.create({
     game: {
-        width: '100%',
+        width: '75%',
         backgroundColor: colors.secondary,
         padding: 5,
         borderRadius: 5,
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     image: {
-        width: "50%",
+        width: "100%",
         alignSelf: "center",
         aspectRatio: 1,
         margin: 10,

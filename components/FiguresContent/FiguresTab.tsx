@@ -125,6 +125,7 @@ function FiguresTab ({ navigation }: FiguresTabProps)  {
                         selectedFilter === "Filter by name" && (
                             <View>
                                 <TextInput
+                                    style={indexStyles.textInput}
                                     onChangeText={(text) => setSearchText(text)}
                                     placeholder="Search Figures..."
                                 />

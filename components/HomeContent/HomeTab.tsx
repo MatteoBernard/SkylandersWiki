@@ -34,7 +34,7 @@ function HomeTab ({ navigation }: HomeTabProps)  {
             const skylander = await getSkylandersByName("Spyro");
             setData1(Object.values(skylander)[0]);
 
-            const element = await getElementByName("Light");
+            const element = await getElementByName("Undead");
             setData2(Object.values(element)[0]);
 
             const game = await getGamesByName("Skylanders: Giants");

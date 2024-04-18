@@ -24,13 +24,13 @@ function ElementsCard(props: ElementCardProps) {
 
 const styles = StyleSheet.create({
     element: {
-        width: '40%',
+        width: '45%',
         backgroundColor: colors.secondary,
         padding: 5,
         borderRadius: 5,
         borderWidth: 1.5,
         borderColor: colors.borders,
-        margin: 10,
+        margin: 6,
     },
     image: {
         width: "70%",

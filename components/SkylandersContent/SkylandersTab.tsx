@@ -149,6 +149,7 @@ function SkylandersTab({ navigation }: SkylandersTabProps) {
                         selectedFilter === "Filter by name" && (
                             <View>
                                 <TextInput
+                                    style={indexStyles.textInput}
                                     onChangeText={(text) => setSearchText(text)}
                                     placeholder="Search Skylanders..."
                                 />

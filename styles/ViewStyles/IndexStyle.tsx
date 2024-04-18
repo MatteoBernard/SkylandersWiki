@@ -14,8 +14,8 @@ const indexStyles = StyleSheet.create({
         borderWidth: 1,
         borderColor: colors.borders,
         backgroundColor: colors.secondary,
-        borderRadius: 10,
-        width: "80%"
+        borderRadius: 5,
+        width: "96%"
     },
     filterPicker: {
         height: 50,
@@ -35,6 +35,14 @@ const indexStyles = StyleSheet.create({
         flexWrap: 'wrap',
         justifyContent: 'center',
     },
+    textInput: {
+        width: '80%',
+        marginBottom: 15,
+        borderRadius: 5,
+        paddingLeft: 10,
+        paddingRight: 10,
+        fontFamily: 'Outfit-Regular'
+    }
 });
 
 export default indexStyles;

@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderWidth: 1.5,
         borderColor: colors.borders,
-        margin: 5,
+        margin: "1.5%",
     },
     image: {
         width: "60%",

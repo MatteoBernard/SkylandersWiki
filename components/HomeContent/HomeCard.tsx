@@ -22,7 +22,7 @@ function HomeCard(props: HomeCardProps) {
 
 const styles = StyleSheet.create({
     figure: {
-        width: '70%',
+        width: '80%',
         backgroundColor: colors.secondary,
         padding: 5,
         borderRadius: 5,
